@@ -65,7 +65,7 @@ class ConfibackModelAdmin(admin.ModelAdmin):
         fromaddr = "senderMail"
         toaddr = receipent_mail
         passwd = "senderMailPassword"
-        sbj    = "Network Backup"
+        sbj    = "İlgili konuyu yazin"
 
 
         message = MIMEMultipart()
