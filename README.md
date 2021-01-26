@@ -9,7 +9,7 @@
 ```
 git clone https://github.com/cciepython/network_backup		# clone the project
 cd network_backup		                                 # go to the project DIR
-virtualenv -p python3 .venv		                        # Create virtualenv named .venv
+virtualenv -p python3 .venv		                       # Create virtualenv named .venv
 source .venv/bin/activate		                        # Active virtualenv named .venv
 pip install -r requirements.txt		                        # Install project requirements in .venv
 python manage.py makemigrations		                        # Create migrations files
