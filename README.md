@@ -13,7 +13,7 @@ virtualenv -p python3 .venv		                        # Create virtualenv named .
 source .venv/bin/activate		                        # Active virtualenv named .venv
 pip install -r requirements.txt		                        # Install project requirements in .venv
 python manage.py makemigrations		                        # Create migrations files
-python manage.py migrate		                         # Create database tables
-python manage.py runserver		                         # Run the project
+python manage.py migrate		                        # Create database tables
+python manage.py runserver		                        # Run the project
 ```
 3. Go to  `http://127.0.0.1:8000/` to use project
