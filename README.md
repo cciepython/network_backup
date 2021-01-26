@@ -16,6 +16,11 @@ python manage.py runserver                                                      
 
 
 
+
+
+
+
+
 ### How to install and run (GNU/Linux and Mac)
                 
 1. Install `git`,`python3`, `pip3`, `virtualenv` in your operating system
