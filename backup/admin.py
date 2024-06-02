@@ -8,12 +8,16 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+from .forms import ConfibackAdminForm
 
 
 
 from django.conf import settings
 
 class ConfibackModelAdmin(admin.ModelAdmin):
+    form = ConfibackAdminForm
+
+
 
     def get_backup(self, request, queryset):
         for obje in queryset:
@@ -56,7 +60,7 @@ class ConfibackModelAdmin(admin.ModelAdmin):
         file.close()
 
 
-        ConfibackModelAdmin.send_mail(self, dest, name, receipent_mail)
+        #ConfibackModelAdmin.send_mail(self, dest, name, receipent_mail)
 
 
 

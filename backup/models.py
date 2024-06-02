@@ -1,5 +1,10 @@
 from django.db import models
 
+
+
+
+
+
 # Create your models here.
 
 cihaz_tipi = (
@@ -9,6 +14,9 @@ cihaz_tipi = (
                 ('cisco_asa', 'cisco_asa'),
                 ('fortinet', 'fortinet'),
                 ('hp_comware', 'hp_comware'),
+                ('arista_eos', 'arista_eos'),
+                ('dell_force10', 'dell_force10'),
+                ('mellanox', 'mellanox'),
 
             )
 
@@ -20,7 +28,7 @@ class Confiback(models.Model):
     ip = models.GenericIPAddressField(max_length=50, protocol='both')
     username = models.CharField(max_length=25)
     password = models.CharField(max_length=25)
-    port = models.IntegerField(blank=True)
+    port = models.IntegerField(blank=True, default=int(22))
     command = models.CharField(max_length=50)
     e_mail = models.EmailField(max_length=50, blank=True)
 

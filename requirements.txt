@@ -1,2 +1,2 @@
-Django==3.1.5
+Django==5.0.6
 Netmiko==3.3.2
